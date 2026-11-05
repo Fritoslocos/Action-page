@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML Layout</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 15px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        article {
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        aside {
+            background-color: #ddd;
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Website</h1>
+
+        <nav aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="home">
+        <article>
+            <h2>First Article</h2>
+            <p>This is the first article on my website.</p>
+        </article>
+
+        <article>
+            <h2>Second Article</h2>
+            <p>This is the second article on my website.</p>
+        </article>  
+    </main>
+
+    <aside>
+        <h2>Sidebar</h2>
+        <p>This contains additional information.</p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
